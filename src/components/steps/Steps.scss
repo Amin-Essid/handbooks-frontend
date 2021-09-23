@@ -1,0 +1,137 @@
+.steps_container {
+  display: flex;
+  max-width: 980px;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.step_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step_title {
+  font-size: 24px;
+  span {
+    font-weight: 700;
+    margin-right: 20px;
+  }
+}
+
+.step_info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.step_image {
+  width: 575px;
+  height: 432px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+}
+
+.step_details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step_gallery {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.step_gallery_image {
+  width: 110px;
+  height: 83px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+}
+
+.step_instructions {
+  margin-top: 5px;
+}
+
+.step_gallery,
+.step_instructions {
+  max-width: 380px;
+}
+
+.step_gallery_image_main {
+  width: 120px;
+  height: 90px;
+  border-radius: 4px;
+  transition: box-shadow 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+.step_container + .step_container {
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  .step_image {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .step_image {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width: 765px) {
+  .step_image {
+    width: 95%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .step_mainimage {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .step_container {
+    justify-content: center;
+    align-items: center;
+  }
+  .step_gallery_image {
+    width: 80px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .step_gallery_image_main {
+    width: 90px;
+    height: auto;
+  }
+
+  .step_gallery {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .step_details {
+    width: 100%;
+    margin: 0;
+  }
+
+  .step_gallery,
+  .step_instructions {
+    width: 100%;
+    max-width: 100%;
+  }
+}

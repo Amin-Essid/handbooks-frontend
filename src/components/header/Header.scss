@@ -1,0 +1,44 @@
+.header_container {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    from(#323232),
+    to(rgba(100, 100, 100, 0.7))
+  );
+  border-radius: 4px;
+  min-height: 200px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header_image {
+  display: inline-block;
+  width: 252px;
+  height: 168px;
+  margin: 30px 0 30px 30px;
+}
+
+.header_info {
+  margin: 0 30px;
+  p {
+    margin: 5px 0;
+  }
+}
+
+.header_title {
+  font-size: 36px;
+  font-weight: 600;
+  text-shadow: 0 2px 4px #000001;
+  margin: 10px 0;
+}
+
+@media (max-width: 750px) {
+  .header_image {
+    display: none;
+  }
+}
